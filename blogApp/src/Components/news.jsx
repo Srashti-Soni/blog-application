@@ -30,12 +30,15 @@ const News = ({ onShowBlogs,blogs ,oneditblogs,ondeleteblog}) => {
   const [showbook, setshowbookmark] = useState(false)
   const [selectedpost,setselectedpost]=useState(null)
   const [showblogmodal,setshowblogmodal]=useState(false) 
+  const apiKey = import.meta.env.VITE_API_KEY_news;
+
    useEffect(() => {
     const fetchNews = async () => {
-      let url = `https://gnews.io/api/v4/top-headlines?category=${selectCate}&lang=en&apikey={apikey}`
-      if (searchQuery) {
-        url = `https://gnews.io/api/v4/search?q=${searchQuery}&lang=en&apikey={apikey}`
-      }
+    let url = `https://gnews.io/api/v4/top-headlines?category=${selectCate}&lang=en&apikey=${apiKey}`
+if (searchQuery) {
+  url = `https://gnews.io/api/v4/search?q=${searchQuery}&lang=en&apikey=${apiKey}`
+}
+
       const response = await axios.get(url)
       const fetchedNews = response.data.articles
       fetchedNews.forEach((article) => {
