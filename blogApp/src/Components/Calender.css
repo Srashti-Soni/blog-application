@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+.calender {
+    background-color: #111214;
+    height: 245px; /* fixed height */
+    min-width: 28rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.date h2 {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #bbb;
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.buttons i {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3542;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+/* Increased spacing from month header */
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.8rem;
+}
+
+.weekdays span {
+    width: calc(100% / 7);
+    text-align: center;
+    color: #788798;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* Reduced spacing between weekdays and days */
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 0.1rem;
+    width: 100%;
+    flex-grow: 1;
+    align-content: start;
+    margin-top: 0.05rem;
+}
+
+.days span {
+    width: calc(100% / 7 - 2px);
+    aspect-ratio: 1;
+    font-size: 1.5rem;
+    color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* Removed unnecessary gap inside */
+}
+
+/* .current-day{
+    background: linear-gradient(to right, rgb(8, 70, 57), #e0e846);
+    color: #fff;
+    font-size: 2rem !important;
+    border-radius: 50%;
+    margin-top: 1rem;
+} */
+.current-day {
+    background: linear-gradient(to right,  rgb(35, 108, 102),rgb(116, 3, 116));
+    color: #fff;
+    font-size: 2rem !important;
+    border-radius: 50%;
+    /* margin-bottom: 1rem; */
+}
+
+@media(max-width: 900px){
+    .calender{
+        height: 100%;
+    }
+}

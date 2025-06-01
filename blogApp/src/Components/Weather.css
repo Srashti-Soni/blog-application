@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+.weather {
+    background-color: #111214;
+    height: 55%;
+    min-width: 28rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.search-top {
+    display: flex;
+    margin-top: 1rem;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.search-top i {
+    font-size: 2.5rem;
+    color: #ddd;
+}
+
+.location {
+    font-family: 'Ancizar Sans', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #fff;
+}
+
+.search-loaction {
+    position: relative;
+}
+
+.search-loaction input {
+    width: clamp(15rem, 14cqi, 25rem);
+    height: 4rem;
+    background-color: transparent;
+    border-bottom: 0.1rem solid #aaa;
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+.search-loaction i {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.weather-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    max-width: 100%;
+    text-align: center;
+}
+
+.weather-data i {
+    font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-data i.bxs-sun {
+    color: rgb(239, 225, 95);
+}
+
+.weather-data i.bxs-cloud-lightning {
+    color: rgb(105, 107, 109);
+}
+
+.weather-data i.bxs-cloud {
+    color: rgb(255, 255, 255);
+}
+
+.weather-data i.bxs-cloud-rain {
+    color: rgb(169, 225, 244);
+}
+
+.weather-data i.bxs-cloud-snow {
+    color: rgb(213, 223, 225);
+}
+
+.weather-type,
+.temp {
+    font-family: "Comic Relief", cursive;
+    font-size: 1.2rem;
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.notFound {
+    font-size: 1.6rem;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    color: #ddd;
+    margin-bottom: 8rem;
+}
+@media(max-width: 900px){
+    .weather{
+        height: 100%;
+
+    }
+    .search-loaction input{
+        width:30rem ;
+    }
+
+}

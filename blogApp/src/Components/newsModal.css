@@ -1,0 +1,74 @@
+.modal-out{
+    position: fixed;
+    inset: 0;
+    display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+background-color: rgb(0,0,0 ,0.7);
+}
+.modal-content{
+width: 30%;
+max-width: 40rem;
+max-height: calc(100% - 15rem);
+height: auto;
+font-size:small;
+background-color: #111214fc;
+padding: 4rem;
+overflow: hidden;
+position: relative;
+border-radius: 1rem;
+box-shadow: rgba(0,0,0,0.5); 
+overflow: scroll;
+}
+.close-button{
+    position:absolute ;
+    top: 1rem;
+    right: 2rem;
+    font-size:2rem ;
+    color: #fff;
+    cursor: pointer;
+}
+.demo{
+  margin-top: -1.5rem;
+   width: 100% ;
+   height: auto;
+   max-height: 30rem;
+   object-fit: cover;
+   border: 1rem;
+   opacity:0.5;
+}
+.modal-title{
+    font-size: 2rem;
+    font-family: "Playfair Display" sans-serif;
+    color:#fff;
+    margin-top: 1.8rem;
+
+}
+.modal-source,.modal-date{
+font-family: 'Comic Relief' sans-serif;
+font-size: 1.4rem;
+color: #bbb;
+margin-top: 0.5rem;
+}
+.modal-text{
+    font-size: 1.5rem;
+    margin-top: 0rem;
+    line-height: 1.8rem;
+    color:#ddd ;
+  display: -webkit-box;
+  -webkit-line-clamp:8 ; /* Show only 5 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.read-more{
+    width: 11rem;
+    display: inline-block;
+    text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+     border-radius: 5rem;
+     padding: 0.7rem;
+     color: #e3e3e3;
+    background:linear-gradient(to right,rgb(8, 70, 57), #6a6c39);
+}    

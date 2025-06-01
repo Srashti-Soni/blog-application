@@ -1,0 +1,65 @@
+ .bookmarks-heading{
+    font-family: "Ancizar Sans",sans-serif;
+    font-size: 3rem;
+    color: #ddd;
+    letter-spacing: 0.4rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+    /*
+.bookmark-item img{
+    display: flex;
+    flex-direction: row;
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    margin-right: 1rem;
+}
+.bookmark-item h3{
+    font-family: "Comic-Relief",cursive;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+}
+.delete-button{
+    font-size: 2.4rem;
+    color: hsl(148, 58%, 65%);
+    cursor: pointer;
+} */
+.bookmark-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  overflow-y: scroll;
+}
+.bookmark-item::-webkit-scrollbar{
+  display: none;
+}
+
+.bookmark-item img {
+  width: 7rem;
+  height: 7rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.bookmark-item h3 {
+  flex: 1; /* Makes h3 grow to fill space */
+  font-family: "Comic Relief", cursive;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0; /* Remove default margin */
+}
+
+.delete-button {
+  font-size: 2.4rem;
+  color: hsl(148, 58%, 65%);
+  cursor: pointer;
+}
